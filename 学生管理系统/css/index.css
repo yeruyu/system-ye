@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 设计版心 */
+.content{
+    background-image: url("https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240226142621178.png");
+    background-repeat: no-repeat;
+    background-size: 102%;
+    width: 1710px;
+    height: 1300px;
+    margin: 0 auto;
+    position: relative;  
+}
+
+/*选择界面顶端*/
+.top{
+    display: flex;
+    position: relative;
+    width: 1710px;;
+    height: 40px;
+    background-color: rgba(0, 0, 0 , 0.2);
+}
+.yunding_img{
+    position: absolute;
+    width:150px;
+    height:40px;
+}
+.yunding_logo{
+    position: relative;
+    left:100px;
+}
+
+/*云深的logo和选择按钮*/
+.flex{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+h1{
+    position: relative;
+    top:-20px;
+    left:40px;
+}
+.identity{
+    position: fixed;
+    height: 550px;
+    width: 500px;
+    left:60%;
+    top:200px;
+}
+.choice{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width:450px;
+}
+.image_stu{
+    background-repeat: no-repeat;
+    position: relative;
+}
+.change_stu{
+    background-image: url("https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240302164343556.png");
+    position: relative;
+    background-size: 90%;
+    width:110px;
+    height:150px;
+    left:50px;
+    top:-80px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0 , 0);
+}
+
+.image_admin{
+    background-repeat: no-repeat;
+    position: relative;
+    top: 170px;
+    left:50px;
+}    
+.change_admin{
+    background-image: url("https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240302171826754.png");
+        position: relative;
+        background-size: 90%;
+        width: 110px;
+        height: 150px;
+        left: -400px;
+        top: 20px;
+        border: none;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0);
+}
+.hidden{display: none;}

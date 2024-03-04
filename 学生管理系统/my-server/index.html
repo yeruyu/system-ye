@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <title>云深学生管理系统</title>
+</head>
+<body>
+    <div class="content">
+        <div class="top">
+            <img src="https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240222221842478.png" class="yunding_img">
+            <div class="yunding_logo">
+                <div style="font-size: 22px;font-weight: 700;">云顶书院</div>
+                <div style="position: absolute; top: 25px;font-size: 8px;">
+                YUNDING&nbsp;&nbsp;&nbsp;&nbsp;ACADMY</div>
+            </div>
+        </div>
+        <!-- 这是上面灰边的代码部分 -->
+
+        <div class="flex">
+            <img src="https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240227153423815%20(1).png" class="yunshen_img">
+            <div class="identity">
+                <h1>请选择你的身份</h1>
+                <div class="choice">
+                    <div id="student" class="stu_box">
+                        <img src="https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240302165535515.png" alt="image-20240302165535515" style="zoom:43%;" id="image_stu">
+                        <button class="change_stu" onclick="replaceBox()" ></button>
+                    </div>
+                    <div id="admin" class="admin_box hidden" >
+                        <img src="https://miandianyaowang.oss-cn-beijing.aliyuncs.com/image-20240302164023635.png" alt="image-20240302164023635" style="zoom:43%;" class="image_admin">
+                        <button class="change_admin"  onclick="replaceStu()"></button>
+                    </div>       
+                </div>
+            </div>
+    </div>
+        
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>

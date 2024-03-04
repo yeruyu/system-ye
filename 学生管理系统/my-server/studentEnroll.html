@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/studentEnroll.css">
+</head>
+<body>
+    <div class="box">
+        <form id="basicMessage" action="/submit_password" method="post">
+            用户名：
+            <input type="text" id="username"  name="username">
+            <br> <br>
+
+            密码：&nbsp;&nbsp;&nbsp;
+            <input type="password" id="password"  name="password">
+            <h6 id="passwordHint" style="display: none;">只能使用大写字母，小写字母和数字的组合</h6>
+            <br><br>
+
+            期数：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="periods"  name="periods">
+            <br><br>
+
+            名字：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name"  name="name">
+            <br><br>
+
+            年龄：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="age"  name="age">
+            <br><br>
+
+            性别：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="sex"  name="sex">
+            <br></br>
+           
+            方向：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="group" name="kind" >
+            <br><br>
+
+            组别：&nbsp;&nbsp;&nbsp;
+            <input type="text" id="group"  name="group">
+        </form>
+        <br>
+        <button type="submit" id="submit">注册</button>
+    </div>
+    <script src="../js/studentEnroll.js"></script>
+</body>
+</html>
