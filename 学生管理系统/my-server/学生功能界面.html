@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云顶书院学生管理系统</title>
+    <link rel="stylesheet" href="../css/学生功能界面.css">
+</head>
+<body>
+    <div class="all">
+        <!--顶部标题部分-->
+        <div class="title">
+            <img src="https://ye-fly.oss-cn-beijing.aliyuncs.com/%E5%AD%A6%E7%94%9F%E5%8A%9F%E8%83%BD%E7%95%8C%E9%9D%A2_02.gif" />
+            <span class="title1">云顶书院学生管理系统</span>
+            <span class="name">姓名：<span></span> </span>
+            <button class="button">退出登录</button>
+        </div>
+        <!--主体部分-->
+        <div class="function">
+            <!--导航栏部分-->
+            <div class="nav">
+                <ul class="fun">
+                    <li class="A" id="1">完善个人信息</li>
+                    <li class="A" id="2">研学查询</li>
+                    <li class="A A1">
+                        <span class="A2">研学申请</span>
+                        <span class="trigon"></span>
+                        <ul class="son">
+                            <li class="B B1" id="3">研学请假</li>
+                            <li class="B" id="4">研学调整</li>
+                        </ul>
+                    </li>
+                    <!-- <li>重大公告</li> -->
+                </ul>
+                <img src="https://ye-fly.oss-cn-beijing.aliyuncs.com/image-20240226194136372.png">
+            </div>
+            <!--右侧主题内容部分-->
+            <div class="main">
+                <!--信息完善功能界面-->
+                <div class="info" id="info">
+                    <div class="basic">
+                        <ul>
+                            <li>姓名 ：<input class="basicInformation" type="text" name="naem" id="name"></li>
+                            <li>期数 ：<input class="basicInformation" type="text" name="periods" id="periods"></li>
+                            <li>方向 ：<input class="basicInformation" type="text" name="kind" id="kind"></li>
+                            <li>学号 ：<input class="basicInformation" type="text" name="number" id="number"></li>
+                            <li>电话 ：<input class="basicInformation" type="text" name="phoneNumber" id="phoneNumber"></li>
+                            <li>专业 ：<input class="basicInformation" type="text" name="profession" id="profession"></li>
+                            <li>班级 ：<input class="basicInformation" type="text" name="class" id="class"></li>
+                        </ul>
+                        <div class="honor">
+                            <span>获奖记录 ：</span>
+                            <textarea name="honor" id="honor"></textarea>
+                        </div>
+                        <button class="submit">确认提交</button>
+                    </div>
+                </div>
+                <!--数港课表查询功能界面-->
+                <div class="learn" id="study">
+                    <table>
+                        <tr>
+                            <td class="head left"></td>
+                            <td class="head time">第一大节</td>
+                            <td class="head time">第二大节</td>
+                            <td class="head time">第三大节</td>
+                            <td class="head time right">第四大节</td>
+                        </tr>
+                        <tr>
+                            <td class="person left kind">全栈</td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person right"></td>
+                        </tr>
+                        <tr>
+                            <td class="person left kind">数据科学</td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person right"></td>
+                        </tr>
+                        <tr>
+                            <td class="person left kind">Java</td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person right"></td>
+                        </tr>
+                        <tr>
+                            <td class="person left kind">CPU&OS</td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person right"></td>
+                        </tr>
+                        <tr>
+                            <td class="person left kind">设计</td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person"></td>
+                            <td class="person right"></td>
+                        </tr>
+                        <tr>
+                            <td class="bottom person left kind">秘书处</td>
+                            <td class="bottom person"></td>
+                            <td class="bottom person"></td>
+                            <td class="bottom person"></td>
+                            <td class="bottom person right"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--研学请假系统界面-->
+                <div class="leave" id="leave">
+                    <div>
+                        <div class="state doing">
+                            <span></span>&nbsp;&nbsp;审批中
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    请假时间：<span></span>
+                                </div>
+                                <div>
+                                    请假原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="state yes">
+                            <span></span>&nbsp;&nbsp;已批准
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    请假时间：<span></span>
+                                </div>
+                                <div>
+                                    请假原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    请假时间：<span></span>
+                                </div>
+                                <div>
+                                    请假原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="state no">
+                            <span></span>&nbsp;&nbsp;被驳回
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    请假时间：<span></span>
+                                </div>
+                                <div>
+                                    请假原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    请假时间：<span></span>
+                                </div>
+                                <div>
+                                    请假原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="Leave" id="Leave">+申请请假</button>
+                </div>
+                <!--请假申请提交界面-->
+                <div class="leaveInformation leaveInformation1">
+                    <div class="Info">
+                        <div class="close">
+                            <div class="x">✖</div>
+                        </div>
+                        <div class="because Name">姓名：<input type="text"></div>
+                        <div class="because">请假时间：<input type="text"></div>
+                        <div class="because">请假原因：<input type="text"></div>
+                        <button class="Submit">提交</button>
+                    </div>
+                </div>
+                <!--研学调整功能界面-->
+                <div class="adjust" id="adjust">
+                    <div>
+                        <div class="state doing">
+                            <span></span>&nbsp;&nbsp;审批中
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    调整时间：<span></span>
+                                </div>
+                                <div>
+                                    调整为：<span></span>
+                                </div>
+                                <div>
+                                    调整原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="state yes">
+                            <span></span>&nbsp;&nbsp;已批准
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    调整时间：<span></span>
+                                </div>
+                                <div>
+                                    调整为：<span></span>
+                                </div>
+                                <div>
+                                    调整原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    调整时间：<span></span>
+                                </div>
+                                <div>
+                                    调整为：<span></span>
+                                </div>
+                                <div>
+                                    调整原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <div class="state no">
+                            <span></span>&nbsp;&nbsp;被驳回
+                        </div>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    调整时间：<span></span>
+                                </div>
+                                <div>
+                                    调整为：<span></span>
+                                </div>
+                                <div>
+                                    调整原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="news">
+                            <div>
+                                <div>
+                                    姓名：<span></span>
+                                </div>
+                                <div>
+                                    调整时间：<span></span>
+                                </div>
+                                <div>
+                                    调整为：<span></span>
+                                </div>
+                                <div>
+                                    调整原因：<span></span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                    <button class="Leave" id="Adjust">+申请调整</button>
+                </div>
+                <!--研学调整申请填写界面-->
+                <div class="leaveInformation leaveInformation2">
+                    <div class="Info">
+                        <div class="close">
+                            <div class="x">✖</div>
+                        </div>
+                        <div class="because Name">姓名：<input type="text"></div>
+                        <div class="because">调整时间：<input type="text"></div>
+                        <div class="because">调整原因：<input type="text"></div>
+                        <div class="because Time">调整为：<input type="text"></div>
+                        <button class="Submit Submit2">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--好臭的代码-->
+    <!-- 
+           　  　▃▆█▇▄▖
+    　 　 　 ▟◤▖　　　◥█▎
+       　 ◢◤　 ▐　　　 　▐▉
+    　 ▗◤　　　▂　▗▖　　▕█▎
+    　◤　▗▅▖◥▄　▀◣　　█▊
+    ▐　▕▎◥▖◣◤　　　　◢██
+    █◣　◥▅█▀　　　　▐██◤
+    ▐█▙▂　　     　◢██◤
+    ◥██◣　　　　◢▄◤
+     　　▀██▅▇▀
+    -->
+</body>
+<script src="../js/jquery-3.7.1.js"></script>
+<script src="../js/页面切换效果.js"></script>
+</html>
