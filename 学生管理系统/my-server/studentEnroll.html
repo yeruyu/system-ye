@@ -16,6 +16,7 @@
             密码：&nbsp;&nbsp;&nbsp;
             <input type="password" id="password"  name="password">
             <h6 id="passwordHint" style="display: none;">只能使用大写字母，小写字母和数字的组合</h6>
+            <p id="passwordError" style="color:red" ></p>
             <br><br>
 
             期数：&nbsp;&nbsp;&nbsp;
@@ -31,11 +32,19 @@
             <br><br>
 
             性别：&nbsp;&nbsp;&nbsp;
-            <input type="text" id="sex"  name="sex">
-            <br></br>
+            <input type="radio" id="male"  name="sex" value="man">
+            <label for="male">男</label> 
+            <input type="radio" id="female" name="sex" value="woman">
+            <label for="female">女</label>
+            <br><br>
            
             方向：&nbsp;&nbsp;&nbsp;
-            <input type="text" id="group" name="kind" >
+            <select id="kind" name="kind">
+                <option value="fullstack">全栈</option>
+                <option value="java">JAVA</option>
+                <option value="ai">AI</option>
+                <option value="cpu">CPU-OS</option>
+            </select>
             <br><br>
 
             组别：&nbsp;&nbsp;&nbsp;
